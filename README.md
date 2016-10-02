@@ -1,2 +1,2 @@
 # mobile-1
-Ingeniería de la Web: Creación de una app con Jquerymobil 
+Ingeniería de la Web: Creación de una app con JQuery Mobile

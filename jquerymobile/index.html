@@ -3,36 +3,140 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>App Jquery Mobile</title>
+<!-- INSERTANDO ENLACES NECESARIOS PARA JQUERY MOBIL, CSS Y JS-->
     <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css">
     <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="application/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="js/ws.js"></script>
 </head>
 <body>
-	<div data-theme="b">
+<!-- PANTALLA 1, ENCABEZADO, INFORMACIÓN Y PIE -->
 	<section id="page1" data-role="page">
-    	<header data-role="header">
-    		<h1>Header</h1>
+    	<header data-role="header" data-theme="b">
+    		<h1>INICIO</h1>
+            <div data-role="navbar">
+                <ul>
+                     <li> 	<a href="#page1" class="ui-btn-active" data-icon="home" data-theme="b" data-transition="flip">	Inicio	</a>	</li>
+                     <li>	<a href="#page2" data-icon="star" data-theme="b" data-transition="flip">						JQMOB	</a>   	</li>
+                     <li>   <a href="#page3" data-icon="grid" data-theme="b" data-transition="flip">						Producto</a>   	</li>
+                     <li>   <a href="#page4" data-icon="grid" data-theme="b" data-transition="flip">						País</a>   		</li>
+                     <li>   <a href="#page5" data-icon="gear" data-theme="b" data-transition="flip">						Crédito</a>   	</li>
+                 </ul>
+       		</div>
+        </header>
+        <article data-role="content">
+		<h1 style="text-align:center">Ingeniería de la Web</h1>
+        <p style="text-align:justify">La ingeniería web es la aplicación de metodologías sistemáticas, disciplinadas y cuantificables al desarrollo eficiente, operación y evolución de aplicaciones de alta calidad en la World Wide Web.<br><br>
+        La ingeniería web se debe al crecimiento desenfrenado que está teniendo la Web está ocasionando un impacto en la sociedad y el nuevo manejo que se le está dando a la información en las diferentes áreas en que se presenta ha hecho que las personas tiendan a realizar todas sus actividades por esta vía.
+        </p>
+		<center><img src="img/logo_ingenieriaweb.png" width="80%"></center>
+        </article>
+        <footer data-role="footer" data-theme="b">
+        	<h1>IGW. Jhony Orellana. UDB</h1>
+        </footer>
+    </section>
+<!-- PANTALLA 2, ENCABEZADO, INFORMACIÓN Y PIE -->
+    <section id="page2" data-role="page">
+    	<header data-role="header" data-theme="b">
+        <h2>JQUERY MOBILE</h2>
+            <div data-role="navbar">
+                <ul>
+                     <li> 	<a href="#page1" class="ui-btn-active" data-icon="home" data-theme="b" data-transition="flip">	Inicio	</a>	</li>
+                     <li>	<a href="#page2" data-icon="star" data-theme="b" data-transition="flip">						JQMOB	</a>   	</li>
+                     <li>   <a href="#page3" data-icon="grid" data-theme="b" data-transition="flip">						Producto</a>   	</li>
+                     <li>   <a href="#page4" data-icon="grid" data-theme="b" data-transition="flip">						País</a>   		</li>
+                     <li>   <a href="#page5" data-icon="gear" data-theme="b" data-transition="flip">						Crédito</a>   	</li>
+                 </ul>
+       		</div>
+        </header>
+        <article data-role="content">
+        	<h1 style="text-align:center"> MULTIPLATAFORMA CON HTML5</h1>
+            <p style="text-align:justify">
+           El marco de trabajoo jQuery Mobile toma el mantra "escribir menos, hacer más" al siguiente nivel: en lugar de escribir aplicaciones únicas para cada dispositivo móvil o sistema operativo, el marco móvil de trabajo jQuery permite diseñar un único sitio web de respuesta alta o una aplicación que trabaja en todas las plataformas de teléfonos inteligentes, tabletas, y de escritorio populares.
+            </p><br>
+            <center><img src="img/Jquery-mobile-devices.png" width="80%" style="text-align:center" ></center>
+        </article>
+        <footer data-role="footer" data-theme="b">
+        	<h1>IGW. Jhony Orellana. UDB</h1>
+        </footer>
+    </section>
+<!-- PANTALLA 3, ENCABEZADO, INFORMACIÓN Y PIE -->    
+    <section id="page3" data-role="page">
+    	<header data-role="header" data-theme="b">
+        <h1>PRODUCTOS</h1>
+            <div data-role="navbar">
+                <ul>
+                     <li> 	<a href="#page1" class="ui-btn-active" data-icon="home" data-theme="b" data-transition="flip">	Inicio	</a>	</li>
+                     <li>	<a href="#page2" data-icon="star" data-theme="b" data-transition="flip">						JQMOB	</a>   	</li>
+                     <li>   <a href="#page3" data-icon="grid" data-theme="b" data-transition="flip">						Producto</a>   	</li>
+                     <li>   <a href="#page4" data-icon="grid" data-theme="b" data-transition="flip">						País</a>   		</li>
+                     <li>   <a href="#page5" data-icon="gear" data-theme="b" data-transition="flip">						Crédito</a>   	</li>
+                 </ul>
+       		</div>        
+        </header>
+        <article data-role="content">
+        	<div data-role="main" class="ui-content">
+        		<a href="#producto" data-rel="popup" style="text-decoration:none" data-transition="turn"> <button id="productos">Ver productos</button></a>
+            </div>
+            <div data-role="popup" id="producto"  class="ui-content">
+            	<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+            	<ul></ul>
+            </div>
+        </article>
+        <footer data-role="footer" data-theme="b">
+        	<h1>IGW. Jhony Orellana. UDB</h1>
+        </footer>
+    </section>
+<!-- PANTALLA 4, ENCABEZADO, INFORMACIÓN Y PIE -->    
+    <section id="page4" data-role="page">
+    	<header data-role="header" data-theme="b">
+        <h1>PAÍSES</h1>
+            <div data-role="navbar">
+                <ul>
+                     <li> 	<a href="#page1" class="ui-btn-active" data-icon="home" data-theme="b" data-transition="flip">	Inicio	</a>	</li>
+                     <li>	<a href="#page2" data-icon="star" data-theme="b" data-transition="flip">						JQMOB	</a>   	</li>
+                     <li>   <a href="#page3" data-icon="grid" data-theme="b" data-transition="flip">						Producto</a>   	</li>
+                     <li>   <a href="#page4" data-icon="grid" data-theme="b" data-transition="flip">						País</a>   		</li>
+                     <li>   <a href="#page5" data-icon="gear" data-theme="b" data-transition="flip">						Crédito</a>   	</li>
+                 </ul>
+       		</div>        
+        </header>
+        <article data-role="content">
+        <div data-role="main" class="ui-content">
+        		<a href="#pais" data-rel="popup" style="text-decoration:none" data-transition="turn"> <button id="paises" data-theme="a">Ver países</button> </a>
+            </div>
+            <div data-role="popup" id="pais" class="ui-content">
+            	<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                <table>
+                </table>
+            </div>
+        </article>
+        <footer data-role="footer" data-theme="b">
+        	<h1>IGW. Jhony Orellana. UDB</h1>
+        </footer>
+    </section>
+<!-- PANTALLA 5, ENCABEZADO, INFORMACIÓN Y PIE -->    
+    <section id="page5" data-role="page">
+    	<header data-role="header" data-theme="b">
+        <h1>CRÉDITOS</h1>
+            <div data-role="navbar">
+                <ul>
+                     <li> 	<a href="#page1" class="ui-btn-active" data-icon="home" data-theme="b" data-transition="flip">	Inicio	</a>	</li>
+                     <li>	<a href="#page2" data-icon="star" data-theme="b" data-transition="flip">						JQMOB	</a>   	</li>
+                     <li>   <a href="#page3" data-icon="grid" data-theme="b" data-transition="flip">						Producto</a>   	</li>
+                     <li>   <a href="#page4" data-icon="grid" data-theme="b" data-transition="flip">						País</a>   		</li>
+                     <li>   <a href="#page5" data-icon="gear" data-theme="b" data-transition="flip">						Crédito</a>   	</li>
+                 </ul>
+       		</div>       
         </header>
         <article data-role="content">
         	<p>Contenido
-            <a href="#page2">Ingresar</a></p>
+
         </article>
-        <footer data-role="footer">
-        	<h1>Footer</h1>
+        <footer data-role="footer" data-theme="b">
+        	<h1>IGW. Jhony Orellana. UDB</h1>
         </footer>
     </section>
-    <section id="page2" data-role="page">
-    	<header data-role="header">
-    		<h1>Header</h1>
-        </header>
-        <article data-role="content">
-        	<p>Contenido</p>
-            <a href="#page1">Ingresar</a></p>
-        </article>
-        <footer data-role="footer">
-        	<h1>Footer</h1>
-        </footer>
-    </section>
-    </div>
+    
 </body>
 </html>
